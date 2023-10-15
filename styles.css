@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(imagenes/codioful-formerly-gradienta-OzfD79w8ptA-unsplash.webp);
+}
+
+header {
+    height: 100px;
+    background-color: #4d4d5c;
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo {
+    text-transform: uppercase;
+    color: #6cc096;
+    font-weight: 200;
+    width: 80px;
+    border-radius: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu {
+    color: #6cc096;
+}
+
+#check {
+    display: none;
+}
+/*termina menu de navegacion*/
+
+/*empieza body*/
+/*titulo banner*/
+#banner {
+    padding: 0 50px;
+    background-image: url(imagenes/joshua-sortino-LqKhnDzSF-8-unsplash.webp);
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before {
+    content: '';
+    background: rgb(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    left: 0;
+}
+
+.contenido-banner {
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner h2 {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido-banner h2 span {
+    font-weight: 600;
+}
+/*termina tirulo banner*/
+
+/*empieza listas de marcas*/
+.listas {
+    position: absolute;
+    left: 0;
+    background-color: bisque;
+    width: 100%;
+    height: 10vh;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;   
+}
+
+.listas li {
+    position: relative;
+    display: inline;
+    font-size: 30px;
+    padding: 30px;
+    color: rgb(43, 70, 226);
+    top: 30px;
+}
+
+.listas .sony {
+    color: rgb(236, 97, 16);
+    font-family: fantasy;
+}
+
+.listas .sam {
+    color: rgb(78, 156, 13);
+    font-family: fantasy;
+}
+
+.listas .lg {
+    color: rgb(16, 210, 236);
+    font-family: fantasy;
+}
+
+.listas .speler {
+    color: rgb(236, 16, 225);
+    font-family: fantasy;
+}
+
+.listas .atvio {
+    color: rgb(150, 218, 218);
+    font-family: fantasy;
+}
+
+.listas .sharp {
+    color: rgb(205, 212, 106);
+    font-family: fantasy;
+}
+
+.listas .vios {
+    color: rgb(155, 154, 152);
+    font-family: fantasy;
+}
+
+.listas .sanyo {
+    color: rgb(103, 116, 50);
+    font-family: fantasy;
+}
+/*termina listas marcas*/
+
+/*empieza article de ventas*/
+#container {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 80vh;
+    top: 200px;
+    margin: 288px 0;
+    display: flex;
+}
+.venta {
+    /* background-color: #6cc096; */
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.venta img {
+    width: 50%;
+    border: solid red;
+    border-width: 10px;
+}
+
+.venta div {
+    padding: 30px 30px;
+}
+
+.venta div h2 {
+    color: aquamarine;
+    margin: 15px 0;
+}
+
+.venta div p {
+    color: burlywood;
+    font-size: 18px;
+}
+
+.boton-saber-mas {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(228, 8, 8);
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+    font-size: 30px;
+}
+
+.boton-saber-mas:hover {
+    background: yellow;
+}
+/*termina article venta*/
+
+/*empieza srticle venta tiras led*/
+.venta-tiras-led {
+    /* background-color: #57b3e9; */
+    position: relative;
+    width: 100%;
+    /* padding: 40px 30px; */
+    
+    text-align: center;
+}
+
+.venta-tiras-led img {
+    width: 50%;
+    border: solid rgb(233, 211, 13);
+    border-width: 10px;
+}
+
+.venta-tiras-led div {
+    padding: 30px 30px;
+}
+
+.venta-tiras-led div h2 {
+    color: aquamarine;
+    margin: 15px 0;
+}
+
+.venta-tiras-led div p {
+    color: burlywood;
+    font-size: 18px;
+}
+
+.boton-saber-mas {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(228, 8, 8);
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+    font-size: 30px;
+}
+
+.boton-saber-mas:hover {
+    background: yellow;
+}
+/*termina article venta tiras led*/
+
+/*epieza media cueris*/
+@media (max-width: 937px) {
+    /*media formulario*/
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #4d4d5c;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    .listas {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #container {
+        flex-direction: column;
+        height: 233.6vh;
+    }
+
+}
